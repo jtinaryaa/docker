@@ -1,0 +1,28 @@
+#Container : A package consisting of Code and its dependencies.
+#Docker : A set of container which is mainly used to manage the conatiners.
+
+#Virtual Machines vs Containers:
+-> Virtual Machines are another standalone computer which is installed over a machine and Managing the multiple computers over another computer is very expensive.
+-> As virtual machine is another machine and it shares the same CPU Usage and memory/Disc Space so it is very slow in performance.
+-> Container is very lightweight and it can be easily installed over any operating systems. We can create an image on any machine and it can be shared over other
+   machines. We can also use multiple containers with fast performance.
+
+#Installation
+-> Windows: You can install Docker Desktop if all system requirements are meet. If system requirements are not there then we can install Docker Toolbox.
+-> MacOS: You can install Docker Desktop if all system requirements are meet. If system requirements are not there then we can install Docker Toolbox.
+-> Linux: Linux natively has Docker Engine. So you can install Docker Engine directly on the Linux Operating System.
+
+#Image Creation:
+Step 1:
+--if you have docker compose file.
+    $ docker build .
+--this will create a docker image.
+
+Step 2:
+--if you application running on port 3000 then you have to open the 3000 port for docker also because your local system doesn't have any connection with docker image.
+    $ docker run -p 3000:3000 image_name
+--this above command will run the image as container and you can access your application by using 3000 port.
+
+
+
+     

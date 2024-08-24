@@ -24,7 +24,7 @@
 		# $docker start container_name/container_id
   - docker start command will not take you to the console of your container like Run command or we can say that docker start command will start the container in background and docker run will start the container in foreground also create a new container of same image.
   - if we want to STOP the existing running container the you should use docker stop command.
-      # $docker stop container_name/container_id
+      ### $docker stop container_name/container_id
 		
 ## 4. Attached and Detached Container
   - docker run command starts the container in Attached mode and docker start command starts the container in Detached  mode.

@@ -24,7 +24,7 @@
 		# $docker start container_name/container_id
   - docker start command will not take you to the console of your container like Run command or we can say that docker start command will start the container in background and docker run will start the container in foreground also create a new container of same image.
   - if we want to STOP the existing running container the you should use docker stop command.
-      ### $docker stop container_name/container_id
+      ### $ docker stop container_name/container_id
 		
 ## 4. Attached and Detached Container
   - docker run command starts the container in Attached mode and docker start command starts the container in Detached  mode.
@@ -32,11 +32,11 @@
   - Detached Mode : Don't Go inside a container terminal.
   - Why these modes are important? because if your application is printing the logs on console and if you want to see  the logs then you need to attach with the container console otherwise it is not required.
   - So if you are starting a container with docker start commad and you want to go to the console of your container then you can use docker attach command.
-    ### $docker attach container_id/container_name
+    ### $ docker attach container_id/container_name
   - one thing is that docker attach will take you the container console that is fine but it will give you the future    logs. If you want to see all the logs then you 
   should use the docker log command on a running container. (this will give you the logs not attach to the container console)
-    ### $docker logs container_id/container_name
+    ### $ docker logs container_id/container_name
   - We also have one more option in logs which is -f , means follow the output so by this way also you can attach to the container.
-    ### $docker logs -f container_id/container_name.
+    ### $ docker logs -f container_id/container_name.
 		
    

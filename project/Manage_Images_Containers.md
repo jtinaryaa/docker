@@ -2,16 +2,16 @@
 
 ## 1. Common Commands
   ### $ docker ps 
-    - this command gives you the list of running container
+  - this command gives you the list of running container
   ### $ docker ps -a 
-    - this command gives you the list of all containers   
+  - this command gives you the list of all containers   
   ### $ docker build . 
-    - build an image via docker compose file. Run this command where Dockerfile is present.
+  - build an image via docker compose file. Run this command where Dockerfile is present.
   ### $ docker run -p 4200:80 image_name 
-    - to run an image and if image having web based application then you need to provide the port.
-    - 80 port is your application port which is running inside a container and your localhost doesn't have any connection with local machine.
-		-	So 4200 port is that port which we can hit via our local machine and it will hit the 80 port inside the container.
-		- Make sure that this port is helpfull when your image is hvaing the web based application.			
+  - to run an image and if image having web based application then you need to provide the port.
+  - 80 port is your application port which is running inside a container and your localhost doesn't have any connection with local machine.
+	-	So 4200 port is that port which we can hit via our local machine and it will hit the 80 port inside the container.
+	- Make sure that this port is helpfull when your image is hvaing the web based application.			
 
    
 ## 2. Docker Run and Docker Build 

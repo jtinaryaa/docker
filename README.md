@@ -8,4 +8,5 @@
 1. first-demo-dockerized
 2. nodejs-app-starting-setup
 3. nodejs-app-finished
+5. Manage_Image_Containers.md
 4. python-app-starting-setup

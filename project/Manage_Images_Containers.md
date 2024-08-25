@@ -38,5 +38,42 @@
     ### $ docker logs container_id/container_name
   - We also have one more option in logs which is -f , means follow the output so by this way also you can attach to the container.
     ### $ docker logs -f container_id/container_name.
+
+## 5. Removing Images and Containers.
+- We can not remove the images if that image is belongs to any container.
+- First we have to remove the container then only we can remove the images.
+- If we are removing any container then it should be in the stopped stage.
+
+  ### Remove Container
+  - Below is the command by which we can remove the container.
+  - $docker rm container_id/container_name
+  - We can also remove multiple containers in a single shot by providing multiple container_id/container_name followed by whitespace in the above command.
+
+  ### Remove Images
+  - Below is the command by which we can remove any image.
+  - $docker rmi image_name
+  - We can also remove multiple images in a single shot by providing multiple image_name followed by whitespace in the above command.
+  - Note: By using '$docker images' command we can get the list of images.
+  - By Using below command, We can also removed the unused images that includes those images which are used by stopped container.
+  - $docker images prune
+  - Same rule also applies here which is that container must be remove first to remove any image.
+
+# Scenario
+- If you have created docker compose file and everytime you are doing any changes then you have to build your image and then run your container.
+- To build image , command will be '$docker build .' 
+- TO Run that image as container '$docker run -p 4200:80 image_name'
+- Now what will happen everytime[for any change in code] a new image will be created and a new container will be created for that image. 
+- So for container what we can do we have a '--rm' flag by which if we start a container then it will automatically remove when it stops so container problem is resolved.
+- For images as we also mentioned above we can use '$docker images prune' to delete unused images.
+- Below is the command which we can follow in this case. [taking an example of web based application]
+- 1. $docker images prune
+- 2. $docker build .
+- 3. $docker run -p 4200:80 --rm image_name
+- So by using above three steps we can prevent to create unwanted images and containers.
+- This we can do if we dont want to have our old code as image or container.
+
+
+
+
 		
    

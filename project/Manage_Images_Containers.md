@@ -55,7 +55,7 @@
   - We can also remove multiple images in a single shot by providing multiple image_name followed by whitespace in the above command.
   - Note: By using '$docker images' command we can get the list of images.
   - By Using below command, We can also removed the unused images that includes those images which are used by stopped container.
-  - $docker images prune
+  - $docker images prune -a
   - Same rule also applies here which is that container must be remove first to remove any image.
 
 # Scenario

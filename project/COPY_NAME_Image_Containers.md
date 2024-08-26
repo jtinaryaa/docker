@@ -45,10 +45,10 @@ so we can use it directly like to stop the container , we can use <$docker stop 
 ## Images -  NAMING
 - We are building the images via compose file , via command <$docker build .>
 - So that time docker is creating the image with some image id but image name/repository and tag doesn't have any name.
-- We have to two things in images one is name/repository and second is tag. <docker images> - to see list of images
+- We have to two things in images one is name/repository and second is tag. [docker images - to see list of images]
 - So name is the image name/repository and tag is the image version.[image tag can be latest or some version number or anything]
 - docker also treat its own images like that, if you remember the docker compose file first statement which is 
-  <FROM node:12>
+  [FROM node:12]
 - In that also the syntax of image is image:tag . So same we can use for our cutome images also.
 - Below is the command by which we can define an image name and tag.
 - $docker build -t my-image:latest .

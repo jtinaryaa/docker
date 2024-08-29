@@ -51,7 +51,7 @@ so we can use it directly like to stop the container , we can use <$docker stop 
   [FROM node:12]
 - In that also the syntax of image is image:tag . So same we can use for our cutome images also.
 - Below is the command by which we can define an image name and tag.
-- $docker build -t my-image:latest .
+> $docker build -t my-image:latest .
 - Now docker will create an image with 'my-image' name and tag will be 'latest' .
 - Note : you can use $docker images --help to explore other commands and features of images.
 

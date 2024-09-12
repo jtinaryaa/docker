@@ -46,12 +46,12 @@
 
   ### Remove Container
   - Below is the command by which we can remove the container.
-  - $docker rm container_id/container_name
+  > $docker rm container_id/container_name
   - We can also remove multiple containers in a single shot by providing multiple container_id/container_name followed by whitespace in the above command.
 
   ### Remove Images
   - Below is the command by which we can remove any image.
-  - $docker rmi image_name
+  > $docker rmi image_name
   - We can also remove multiple images in a single shot by providing multiple image_name followed by whitespace in the above command.
   - Note: By using '$docker images' command we can get the list of images.
   - By Using below command, We can also removed the unused images that includes those images which are used by stopped container.

@@ -3,11 +3,12 @@
 ## 1. Introduction
   - What is Volumes and Bind Mounts in Docker ? Lets understand that first .
   - Volumes and Bind Mounts in Docker are used to address the challenge of persisting data and files that are created or updated within a running  container.
-  - Consider an application that runs within a container and continuously updates or creates files, such as a feedback file for user input.
-  - Now this application is running via container and users are using our application and that file is updating day by day or new files
+  - Consider an application that runs within a container and continuously update or create files.
+  - And that application is running via container and many users are using our application and those files are updating day by day or new files
 	  are getting created day by day.
-  - Lets understand this scenario by one example , we are creating one application which is asking fro feedback and all the feeback we are saving
-    in one file and that application is running via container.
+  - To illustrate this scenario, let's consider an example where we need to develop an application that includes a web page serving as a 
+	  feedback   form. Users should be able to provide a title and description, and upon submitting the form, a new file should be created. The file should be named after the provided title, and the description should be saved within that file. Before saving the feedback our application should check if same file name exists or not , if exists then it should give error.	
+  - Many users are providing the feedback so multiple files are getting created.	
   - So the problem is if that container gets deleted/removed then we will also lost that updated files where all the data was there.
   - And big problem is that if we are done some changes in the code and creating a new image and that images is creating a new container
     then we will not get the latest feedback file. Got it.

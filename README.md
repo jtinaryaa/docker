@@ -11,3 +11,6 @@
 5. Manage_Image_Containers.md
 4. python-app-starting-setup
 5. COPY_NAME_Image_Containers.md
+6. Share_and_Push_docker_images.md
+7. Volume_with_BindMounts.md
+8. data-volumes-01-starting-setup

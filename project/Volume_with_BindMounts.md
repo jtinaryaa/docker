@@ -9,9 +9,11 @@
   - To illustrate this scenario, let's consider an example where we need to develop an application that includes a web page serving as a 
 	  feedback   form. Users should be able to provide a title and description, and upon submitting the form, a new file should be created. The file should be named after the provided title, and the description should be saved within that file. Before saving the feedback our application should check if same file name exists or not , if exists then it should give error.	
   - Many users are providing the feedback so multiple files are getting created.	
-  - So the problem is if that container gets deleted/removed then we will also lost that updated files where all the data was there.
-  - And big problem is that if we are done some changes in the code and creating a new image and that images is creating a new container
-    then we will not get the latest feedback file. Got it.
+	- Considering that application is running via container.
+  - So the problem is if that container gets deleted/removed then we will lost those updated feedback files in which all the data was 
+	  getting stored.
+  - And big problem is that if we have to do some changes in the code in future then we will have to create new image and that new images 
+	  will create a new container everytime. So those all feebdack data files would lost and will not be able to recover them.
   - Docker introduced Volumes and Bind Mounts as solutions to this problem.
   - Volumes involve keeping the file outside the container, ensuring that it is accessible and preserved even if the container is recreated.
   - There are two ways to keep the file outside the container: within Docker (Volumes) or in a repository/folder managed by the user (Bind Mounts). 
